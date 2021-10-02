@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
+	"github.com/radityaqb/tgtc/backend/database"
 	"github.com/radityaqb/tgtc/backend/handlers"
 	"github.com/radityaqb/tgtc/backend/server"
 )
@@ -12,7 +13,7 @@ import (
 func main() {
 
 	// Init database connection
-	// database.InitDB()
+	database.InitDB()
 
 	// Init serve HTTP
 	router := mux.NewRouter()
